@@ -1,4 +1,4 @@
-<section class="section services py-5">
+<section class="section services py-5 my-5">
   <div class="container">
     <div class="row justify-content-left pb-5">
       <div class="col-12 col-xl-8">
@@ -19,7 +19,9 @@
               {{ with .text }}<p class="card-text pb-4">{{ . }}</p>{{ end }}
               {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
             </div>
-            {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+            <div class="text-center">
+              {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+            </div>
           </div>
         </div>
       {{ end }}

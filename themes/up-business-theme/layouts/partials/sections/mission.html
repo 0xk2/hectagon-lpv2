@@ -19,10 +19,15 @@
         </h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-xl-12">
+    <div class="row text-center">
+      <div class="col-12 col-xl-12 d-none d-lg-block">
         {{ with .content.image }}
           {{ partial "utilities/image-fluid.html" . }}
+        {{ end }}
+      </div>
+      <div class="col-12 col-xl-12 d-block d-lg-none">
+        {{ with .content.xsimage }}
+          {{ partial "utilities/image.html" . }}
         {{ end }}
       </div>
     </div>

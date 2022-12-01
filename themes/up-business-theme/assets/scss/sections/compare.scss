@@ -1,13 +1,24 @@
 .section.compare {
   .opt, .offer {
     font-family: 'General Sans';
-    .num {
-      font-size: 64px;
+    .num, .title {
       font-weight: 600 !important;
     }
-    .title {
-      font-size: 32px;
-      font-weight: 600 !important;
+    @media only screen and (max-width: 768px) {
+      .num {
+        font-size: 32px;
+      }
+      .title {
+        font-size: 16px;
+      }
+    }
+    @media only screen and (min-width: 769px) {
+      .num {
+        font-size: 64px;
+      }
+      .title {
+        font-size: 32px;
+      }
     }
   }
   .opt {

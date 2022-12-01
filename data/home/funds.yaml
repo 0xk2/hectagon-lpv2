@@ -2,7 +2,9 @@ enabled: true
 id: "funds"
 
 content:
-  title: "Explore Hectagon’s investment funds"
+  title: 
+    line1: "Explore Hectagon’s"
+    line2: "Investment Funds"
   more:
     text: "View all"
     url: ""

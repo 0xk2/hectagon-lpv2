@@ -2,7 +2,7 @@ enabled: true
 id: "cta"
 
 content:
-  title: "Welcome to the revolution!"
+  title: "Welcome To The Revolution!"
   subtitle: "Getting started with one single step and begin your investment journey with Hectagon."
   image: "images/Ticket.svg"
   ticket: 

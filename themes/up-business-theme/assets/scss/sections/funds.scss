@@ -18,9 +18,62 @@
       font-weight: 600;
     }
   }
+  @include media-breakpoint-down(lg){
+    .list-of-fund{
+      gap: 24px;
+    }
+    .heading-fund {
+      gap: 24px;
+    }
+    .top-fund{
+      .logo-wrapper{
+        height: 150px;
+        div {
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+    .apy-label{
+      font-size: 24px;
+    }
+    .apy-sublabel{
+      font-size: 12px;
+    }
+    .pct {
+      font-size: 32px;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    .top-fund{
+      .logo-wrapper{
+        height: 200px;
+        div {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+    .apy-label{
+      font-size: 32px;
+    }
+    .apy-sublabel{
+      font-size: 14px;
+    }
+    .pct {
+      font-size: 56px;
+    }
+  }
   .card {
+    &.commingsoon {
+      border: 0px !important;
+    }
+    &.closed {
+      border: 1px solid #6C5DD3;
+    }
     .top-fund {
-      height: 424px;
       background-color: #F3F3F3;
       padding: 16px;
       border-radius: 34px 34px 0px 0px;
@@ -28,15 +81,11 @@
       flex-direction: column;
       justify-content: space-between;
       .logo-wrapper {
-        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         div {
           text-align: center;
-          img {
-            width: 80%;
-          }
         }
       }
       .apy-text {
@@ -52,15 +101,6 @@
         font-family: 'General Sans';
         font-weight: 600;
         padding: 4px 16px;
-        .apy-label{
-          font-size: 32px;
-        }
-        .apy-sublabel{
-          font-size: 14px;
-        }
-        .pct {
-          font-size: 56px;
-        }
       }
     }
     .body-fund {

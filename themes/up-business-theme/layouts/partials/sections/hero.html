@@ -1,22 +1,22 @@
 <section class="section hero py-5">
   <div class="container py-5">
-    <div class="row flex-column flex-xl-row-reverse">
-      <div class="col-12 col-xl-6  d-flex flex-row hero-image">
+    <div class="row flex-column flex-xl-row-reverse flex-lg-row-reverse">
+      <div class="col-12 col-lg-6 col-xl-6 d-flex flex-row hero-image">
         {{ partial "utilities/image-fluid" "images/hero-image.png" }}
       </div>
-      <div class="col-12 col-xl-6 d-flex flex-column hero-title-wrapper">
+      <div class="col-12 col-lg-6 col-xl-6 d-flex flex-column hero-title-wrapper">
         {{ with .content.title }}
-          <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start pb-4">{{ . | markdownify }}</h3>
+          <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start text-lg-start pb-4">{{ . | markdownify }}</h3>
         {{ end }}
       </div>
     </div>
-    <div class="row flex-column flex-xl-row">
-      <div class="col-12 col-xl-6 d-flex flex-column hero-desc">
+    <div class="row flex-column flex-xl-row flex-lg-row">
+      <div class="col-12 col-lg-6 col-xl-6 d-flex flex-column hero-desc">
         {{ with .content.text }}
           <p class="text-center text-black-61 text-xl-start pb-4">{{ . | markdownify }}</p>
         {{ end }}
       </div>
-      <div class="col-12 col-xl-6  d-flex flex-column">
+      <div class="col-12 col-lg-6 col-xl-6  d-flex flex-column">
         <div class="d-flex flex-column flex-xl-row hero-cta">
           {{ with .content.buttonPrimary }}
             <a class="btn btn-primary text-light px-4 my-1" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>

@@ -8,4 +8,16 @@
   .container {
     border-bottom: 1px solid #D3D3E5;
   }
+  .link-menu-item, .highlight-menu-item {
+    font-size: 16px;
+    font-family: 'General Sans';
+  }
+  .link-menu-item{
+    color: #4D4C55 !important;
+    font-weight: 500;
+  }
+  .highlight-menu-item {
+    color: #5D5FEF !important;
+    font-weight: 600;
+  }
 }

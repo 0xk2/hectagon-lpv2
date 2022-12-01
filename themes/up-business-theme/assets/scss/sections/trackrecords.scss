@@ -2,20 +2,49 @@
   .record {
     .line1, .line3{
       font-size: 28px;
-      color: #A1A1BD;
-      font-family: 'General Sans';
       font-weight: 500;
+      font-family: 'General Sans';
+      color: #A1A1BD;
     }
     .line2{
       font-size: 60px;
-      color: #565670;
-      font-family: 'General Sans';
       font-weight: 500;
+      font-family: 'General Sans';
+      color: #565670;
     }
   }
-  .portfolio-logo{
-    display: inline-block;
-    width: 200px;
-    text-align: left;
+  @media only screen and (max-width: 767px){
+    .portfolio-logo{
+      display: inline-block;
+      width: 100px;
+      margin: 4px;
+      img {
+        max-width: 100px;
+      }
+      text-align: left;
+    }
+    .record {
+      .line1, .line3{
+        font-size: 16px;
+      }
+      .line2{
+        font-size: 32px;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .portfolio-logo{
+      display: inline-block;
+      width: 200px;
+      text-align: left;
+    }
+    .record {
+      .line1, .line3{
+        font-size: 28px;
+      }
+      .line2{
+        font-size: 60px;
+      }
+    }
   }
 }

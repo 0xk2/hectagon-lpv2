@@ -2,7 +2,7 @@ enabled: true
 id: "compare"
 
 content:
-  title: "Building wealth by investing"
+  title: "Building Wealth By Investing"
   text: "Putting your hard-earn money where it gets the most return"
   opt1:
     number: "1.5x"

@@ -1,22 +1,27 @@
 <section class="section funds py-5">
   <div class="container">
-    <div class="row justify-content-between pb-4">
-      <div class="col-12 col-xl-4 text-align-left">
+    <div class="row justify-content-between pb-4 heading-fund">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center text-xl-start text-lg-start">
         {{ with .content.title }}
-          <h3 class="section-title"> {{ . | markdownify }} </h3>
+          <p>
+            <h3 class="section-title"> {{ .line1 | markdownify }} </h3>
+          </p>
+          <p>
+            <h3 class="section-title"> {{ .line2 | markdownify }} </h3>
+          </p>
         {{ end }}
       </div>
-      <div class="col-4 col-xl-4 text-align-right viewall">
+      <div class="col-12 col-xl-4 text-align-right viewall">
         {{ with .content.more }}
-          <a href="{{ .url }}">{{ .text | markdownify }}</a>
+          <a class="d-none d-lg-block" href="{{ .url }}">{{ .text | markdownify }}</a>
         {{ end }}
       </div>
     </div>
 
-    <div class="row justify-content-between pb-4">
+    <div class="row justify-content-between pb-4 list-of-fund">
       {{ range .content.items }}
-      <div class="col-12 col-xl-4">
-        <div class="card border-0 border-radius-34">
+      <div class="col-12 col-lg-4 col-xl-4">
+        <div class="card border-radius-34 {{ .status }}">
           <div class="top-fund">
             <div class="logo-wrapper">
               <div>
@@ -58,6 +63,11 @@
         </div>
       </div>
       {{ end }}
+      <div class="col-12 col-xl-4 text-align-right viewall">
+        {{ with .content.more }}
+          <a class="d-block d-lg-none btn btn-outline-primary w-100" href="{{ .url }}">{{ .text }}</a>
+        {{ end }}
+      </div>
     </div>
 
     <div class="row justify-content-between pb-4 pt-4">
