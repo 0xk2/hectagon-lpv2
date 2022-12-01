@@ -13,16 +13,13 @@
       color: #565670;
     }
   }
-  @media only screen and (max-width: 767px){
-    .portfolio-logo{
-      display: inline-block;
-      width: 100px;
-      margin: 4px;
-      img {
-        max-width: 100px;
-      }
-      text-align: left;
+  .portfolio-logo{
+    gap: 24px;
+    img {
+      max-width: 200px;
     }
+  }
+  @include media-breakpoint-down(lg){
     .record {
       .line1, .line3{
         font-size: 16px;
@@ -32,12 +29,7 @@
       }
     }
   }
-  @media only screen and (min-width: 768px){
-    .portfolio-logo{
-      display: inline-block;
-      width: 200px;
-      text-align: left;
-    }
+  @include media-breakpoint-up(lg){
     .record {
       .line1, .line3{
         font-size: 28px;

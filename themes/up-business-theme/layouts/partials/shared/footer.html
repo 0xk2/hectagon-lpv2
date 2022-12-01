@@ -1,10 +1,10 @@
 <footer class="shared footer bg-blue-light py-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-lg-6 col-xl-6 illustration-wrapper py-2">
         {{ partial "utilities/image.html" "images/LogoText.svg" }}
       </div>
-      <div class="col-12 col-xl-6 social" style="gap:24px">
+      <div class="col-12 col-lg-6 col-xl-6 social d-flex py-2 justify-content-start justify-content-lg-end justify-content-xl-end" style="gap:24px">
         {{ range .Site.Params.social }}
           <a href="{{ .url }}">
             {{ partial "utilities/image.html" .image }}
@@ -12,17 +12,16 @@
         {{ end }}
       </div>
     </div>
-    <div class="row d-flex mt-2">
-      <div class="col-12 col-xl-6">
+    <div class="row d-flex flex-lg-row flex-xl-row d-flex flex-md-column-reverse flex-sm-column-reverse">
+      <div class="col-12 col-lg-6 col-xl-6 d-flex justify-content-center flex-column" style="margin-bottom: 24px;">
         {{ with .Site.Params.copyright }}
-          <h3 class="copyright"> {{ . | markdownify }} </h3>
+          <a class="copyright"> {{ . | markdownify }} </a>
         {{ end }}
       </div>
-      <div class="col-12 col-xl-6 social" style="gap:16px">
+      <div class="col-12 col-lg-6 col-xl-6 py-1 justify-content-between d-flex social flex-column flex-xl-row flex-lg-row" style="gap:24px; margin-bottom: 24px;">
         {{ range .Site.Menus.footer }}
           <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
         {{ end }}
       </div>
-    </div>
   </div>
 </footer>

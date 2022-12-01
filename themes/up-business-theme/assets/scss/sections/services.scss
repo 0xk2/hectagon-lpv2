@@ -13,13 +13,8 @@
     display: flex;
     justify-content: center;
   }
-  .illustration-wrapper {
-    img {
-      width: 100%;
-    }
-  }
 
-  @media only screen and (max-width: 767px){
+  @include media-breakpoint-down(lg){
     .section-subtitle {
       font-size: 15px;
     }
@@ -29,16 +24,26 @@
     .card-text {
       font-size: 20px;
     }
+    .illustration-wrapper {
+      img {
+        max-width: 200px;
+      }
+    }
   }
-  @media only screen and (min-width: 768px){
+  @include media-breakpoint-up(lg){
     .section-subtitle {
       font-size: 20px;
     }
     .card-title {
-      font-size: 32px;
+      font-size: 30px;
     }
     .card-text {
       font-size: 15px;
+    }
+    .illustration-wrapper {
+      img {
+        width: 100%;
+      }
     }
   }
 }

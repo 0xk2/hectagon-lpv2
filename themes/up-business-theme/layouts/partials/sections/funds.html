@@ -11,7 +11,7 @@
           </p>
         {{ end }}
       </div>
-      <div class="col-12 col-xl-4 text-align-right viewall">
+      <div class="col-12 col-xl-4 text-align-right viewall d-flex flex-column justify-content-center">
         {{ with .content.more }}
           <a class="d-none d-lg-block" href="{{ .url }}">{{ .text | markdownify }}</a>
         {{ end }}
@@ -63,7 +63,7 @@
         </div>
       </div>
       {{ end }}
-      <div class="col-12 col-xl-4 text-align-right viewall">
+      <div class="col-12 col-xl-4 text-align-right">
         {{ with .content.more }}
           <a class="d-block d-lg-none btn btn-outline-primary w-100" href="{{ .url }}">{{ .text }}</a>
         {{ end }}
