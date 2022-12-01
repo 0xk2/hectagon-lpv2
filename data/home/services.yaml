@@ -5,21 +5,21 @@ content:
   title: "Investments Powered By Greatness"
   text: "Being part of Hectagon, you have a stake in the investment funds of your choice, and governance power to DAO community, partners, and portfolio. TOGETHER - we find, invest and contribute to the growth of the most innovative Web3 projects."
   cards:
-    - image: "images/services/1.png"
+    - image: "images/services/1.svg"
       title: "Experience"
       text: "Active investment pipeline with 260+ projects reviewed by 10+ year VC degens."
       # button:
       #   label: "Learn more"
       #   url: "#"
 
-    - image: "images/services/2.png"
+    - image: "images/services/2.svg"
       title: "Togetherness"
       text: "Strong community of 40,000+ investors and DAO workers to make investment decisions."
       # button:
       #   label: "Learn more"
       #   url: "#"
 
-    - image: "images/services/3.png"
+    - image: "images/services/3.svg"
       title: "Transparency"
       text: "Easily track & manage funds and personal investment portfolios through Hectagon’s dashboard."
       # button:

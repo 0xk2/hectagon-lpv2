@@ -20,12 +20,12 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-12 col-xl-12 d-none d-lg-block">
+      <div class="col-12 col-xl-12 d-none d-lg-block bottom-illustration">
         {{ with .content.image }}
-          {{ partial "utilities/image-fluid.html" . }}
+          {{ partial "utilities/image.html" . }}
         {{ end }}
       </div>
-      <div class="col-12 col-xl-12 d-block d-lg-none">
+      <div class="col-12 col-xl-12 d-block d-lg-none bottom-illustration">
         {{ with .content.xsimage }}
           {{ partial "utilities/image.html" . }}
         {{ end }}

@@ -19,8 +19,8 @@
               {{ with .text }}<p class="card-text pb-4">{{ . }}</p>{{ end }}
               {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
             </div>
-            <div class="text-center">
-              {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+            <div class="text-center illustration-wrapper">
+              {{ with .image }}{{ partial "utilities/image.html" . }}{{ end }}
             </div>
           </div>
         </div>

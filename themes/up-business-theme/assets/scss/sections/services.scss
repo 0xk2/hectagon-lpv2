@@ -13,6 +13,11 @@
     display: flex;
     justify-content: center;
   }
+  .illustration-wrapper {
+    img {
+      width: 100%;
+    }
+  }
 
   @media only screen and (max-width: 767px){
     .section-subtitle {
