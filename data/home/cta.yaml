@@ -1,0 +1,16 @@
+enabled: true
+id: "cta"
+
+content:
+  title: "Welcome to the revolution!"
+  subtitle: "Getting started with one single step and begin your investment journey with Hectagon."
+  image: "images/Ticket.svg"
+  ticket: 
+    title: "Buy Fund Token"
+    content: "Each fund will have their own token that enables holders to participate in the protocol."
+  primarybutton:
+    label: "Invest new"
+    url: "#"
+  secondarybutton:
+    label: "Subscribe"
+    url: "#"

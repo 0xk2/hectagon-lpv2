@@ -1,0 +1,15 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Making Early-Investment In Web3 Easily"
+  text: "Hectagon is a collective of experienced investors, builders, and contributors. We want to transform investing by making early investment accessible and stress-free for everyone."
+
+  buttonPrimary:
+    label: "Invest now"
+    url: "#"
+
+  buttonSecondary:
+    label: "Subscribe"
+    url: ""
+

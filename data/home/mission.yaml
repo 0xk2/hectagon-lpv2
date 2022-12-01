@@ -1,0 +1,10 @@
+enabled: true
+id: "mission"
+
+content:
+  title: "Hectagon’s Mission"
+  text1: "We aim to onboard 1 billions people to"
+  text2: "Web3 community through the power of investing."
+
+  image: "images/footerbg.png"
+

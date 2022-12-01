@@ -1,0 +1,52 @@
+enabled: true
+id: "funds"
+
+content:
+  title: "Explore Hectagon’s investment funds"
+  more:
+    text: "View all"
+    url: ""
+  items:
+    - logo: "images/funds/Hectagon.svg"
+      title: "Hectagon InvestmentDAO"
+      apy: "32%"
+      status: "closed"
+      raised: "$1,500,000"
+      total: "1,500,000"
+      pct: 100
+    - logo: "images/funds/ComingSoon.svg"
+      title: "Your next DAO is here!"
+      apy: "XX%"
+      status: "commingsoon"
+      raised: "$XXX,XXX"
+      total: "XXX,XXX"
+      pct: 100
+    - logo: "images/funds/ComingSoon.svg"
+      title: "Your next DAO is here!"
+      apy: "XX%"
+      status: "commingsoon"
+      raised: "$XXX,XXX"
+      total: "XXX,XXX"
+      pct: 100
+  coinvest:
+    - name: "Binance"
+    - name: "Kucoin"
+    - name: "TON"
+    - name: "DAO Maker"
+    - name: "Seedify"
+    - name: "Polkastarter"
+    - name: "Gate.io Venture"
+    - name: "Amonica Brands"
+    - name: "GSR Ventures"
+    - name: "Polygon Studios Ventures"
+    - name: "NEXO Ventures"
+    - name: "NGC Ventures"
+    - name: "Shima Capital"
+    - name: "Alumni Ventures"
+    - name: "MEXC Ventures"
+    - name: "Huobi Incubator"
+    - name: "Orbs Network"
+    - name: "Huobi Incubator"
+    - name: "Enjinstarter"
+    - name: "Immutable Ventures"
+  

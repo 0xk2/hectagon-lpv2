@@ -1,0 +1,79 @@
+baseURL: "https://www.example.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "Hectagon"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Hectagon"
+  description: "Hectagon want onboard the next billion user to web3 using the power of investing."
+  images: 
+    - "images/hero-image.png"
+
+  logo: "logo.svg"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    - image: "images/social/medium.svg"
+      url: "#"
+    - image: "images/social/twitter.svg"
+      url: "#"
+    - image: "images/social/discord.svg"
+      url: "#"
+    - image: "images/social/telegram.svg"
+      url: "#"
+
+  copyright: "© 2022 Hectagon"
+
+menus:
+  main:
+    - name: "Invest"
+      url: "/#hero"
+      weight: 1
+
+    - name: "Create a DAO"
+      url: "/#"
+      weight: 2
+
+    - name: "Raise fund"
+      url: "/#"
+      weight: 3
+
+  buttons:
+    - name: "Enter app"
+      url: "/#"
+      weight: 5
+      pre: "btn btn-primary text-light"
+
+  footer: 
+    - name: "About"
+      url: /
+      weight: 1
+
+    - name: "Careers"
+      url: /
+      weight: 2
+
+    - name: "Community"
+      url: /
+      weight: 3
+
+    - name: "Term & Privacy"
+      url: /
+      weight: 4
+
+    - name: "Contact"
+      url: /
+      weight: 5
+
+taxonomies:
+  series: "series"
+  tags: "tags"

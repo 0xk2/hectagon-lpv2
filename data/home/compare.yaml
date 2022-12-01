@@ -1,0 +1,20 @@
+enabled: true
+id: "compare"
+
+content:
+  title: "Building wealth by investing"
+  text: "Putting your hard-earn money where it gets the most return"
+  opt1:
+    number: "1.5x"
+    title: "Bank savings"
+  opt2:
+    number: "3x"
+    title: "Stock"
+  offer:
+    number: "15x"
+    title: "Hectagon fund"
+  disclaimer: 
+    text: "*This is a hypothetical comparison for 10 years return. Investing involves risk of loss and performance is not guaranteed."
+    more: 
+      text: "Learn more"
+      url: ""
