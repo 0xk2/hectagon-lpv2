@@ -1,0 +1,21 @@
+.section.trackrecords {
+  .record {
+    .line1, .line3{
+      font-size: 28px;
+      color: #A1A1BD;
+      font-family: 'General Sans';
+      font-weight: 500;
+    }
+    .line2{
+      font-size: 60px;
+      color: #565670;
+      font-family: 'General Sans';
+      font-weight: 500;
+    }
+  }
+  .portfolio-logo{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+  }
+}

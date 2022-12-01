@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('{{ site.BaseURL }}/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('{{ site.BaseURL }}/fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('{{ site.BaseURL }}/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('{{ site.BaseURL }}/fonts/GeneralSans-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('{{ site.BaseURL }}/fonts/GeneralSans-Semibold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('{{ site.BaseURL }}/fonts/GeneralSans-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('{{ site.BaseURL }}/fonts/GeneralSans-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('{{ site.BaseURL }}/fonts/GeneralSans-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('{{ site.BaseURL }}/fonts/GeneralSans-Extralight.otf') format('opentype');
+  font-weight: 100,200;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('{{ site.BaseURL }}/fonts/PTSerif-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('{{ site.BaseURL }}/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: 500;
+}

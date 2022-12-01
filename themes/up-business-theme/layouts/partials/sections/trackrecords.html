@@ -1,0 +1,28 @@
+<section class="section trackrecords py-5">
+  <div class="container">
+    <div class="row justify-content-left pb-5">
+      {{ with .content.title }}
+        <div class="section-title"> {{ . | markdownify }} </div>
+      {{ end }}
+    </div>
+    <div class="row justify-content-left pb-5">
+      {{ range .content.record }}
+        <div class="col-4 record text-align-left pt-4 pb-4">
+          {{ with .line1 }}<div class="line1"> {{ . | markdownify }} </div>{{ end }}
+          {{ with .line2 }}<div class="line2"> {{ . | markdownify }} </div>{{ end }}
+          {{ with .line3 }}<div class="line3"> {{ . | markdownify }} </div>{{ end }}
+        </div>
+      {{ end }}  
+    </div>
+    <div class="row justify-content-center pb-2 pt-2">
+      <hr/>
+    </div>
+    <div class="pb-5">
+      {{ range .content.logos }}
+        <div class="pr-4 pb-4 portfolio-logo">
+          {{ partial "utilities/image.html" .image }}
+        </div>
+      {{ end }}  
+    </div>
+  </div>
+</section>

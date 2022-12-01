@@ -1,0 +1,30 @@
+<section class="section mission py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 col-xl-12">
+        {{ with .content.title }}
+          <h3 class="section-title pt-4 pb-4"> {{ . | markdownify }} </h3>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-12 col-xl-12">
+        <h3 class="section-subtitle pb-4 pt-4">
+          {{ with .content.text1 }}
+            <p>{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .content.text2 }}
+            <p>{{ . | markdownify }}</p>
+          {{ end }}
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-xl-12">
+        {{ with .content.image }}
+          {{ partial "utilities/image-fluid.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

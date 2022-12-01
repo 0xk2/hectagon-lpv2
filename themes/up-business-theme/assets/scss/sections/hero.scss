@@ -1,0 +1,26 @@
+.section.hero {
+  .hero-image {
+    // @media (min-width: 1400px) {
+    //   img {
+    //     max-width: 125%;
+    //     float: right;
+    //   }
+    // }
+    justify-content: flex-end;
+  }
+  .hero-title-wrapper {
+    .hero-title {
+      font-family: 'PT Serif';
+      font-weight: 700;
+      color: $secondary !important;
+    }
+    justify-content: flex-end;
+  }
+
+  .hero-desc {
+    justify-content: flex-start;
+  }
+  .hero-cta {
+    justify-content: flex-end;
+  }
+}

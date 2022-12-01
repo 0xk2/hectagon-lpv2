@@ -1,0 +1,28 @@
+<footer class="shared footer bg-blue-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-6">
+        {{ partial "utilities/image.html" "images/LogoText.svg" }}
+      </div>
+      <div class="col-12 col-xl-6 social" style="gap:24px">
+        {{ range .Site.Params.social }}
+          <a href="{{ .url }}">
+            {{ partial "utilities/image.html" .image }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row d-flex mt-2">
+      <div class="col-12 col-xl-6">
+        {{ with .Site.Params.copyright }}
+          <h3 class="copyright"> {{ . | markdownify }} </h3>
+        {{ end }}
+      </div>
+      <div class="col-12 col-xl-6 social" style="gap:16px">
+        {{ range .Site.Menus.footer }}
+          <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>

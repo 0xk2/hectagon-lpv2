@@ -1,0 +1,15 @@
+.footer {
+  background-color: #F8F8FF;
+  color: #9393B3;
+  .social {
+    display: flex;
+    justify-content: right;
+    a {
+      color: #9393B3;
+      text-decoration: none;
+    }
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}

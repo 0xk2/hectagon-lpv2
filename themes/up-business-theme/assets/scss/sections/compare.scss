@@ -1,0 +1,24 @@
+.section.compare {
+  .opt, .offer {
+    font-family: 'General Sans';
+    .num {
+      font-size: 64px;
+      font-weight: 600 !important;
+    }
+    .title {
+      font-size: 32px;
+      font-weight: 600 !important;
+    }
+  }
+  .opt {
+    opacity: .5;
+    color: #282858;
+  }
+  .offer {
+    color: $primary;
+  }
+  .disclaimer {
+    color: $caption;
+    opacity: .5;
+  }
+}

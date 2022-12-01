@@ -1,0 +1,29 @@
+<section class="section cta py-5 my-5">
+  <div class="container py-5 my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+        {{ with .content.title }}
+          <h3 class="section-title text-center pb-4">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.subtitle }}
+          <h3 class="section-subtitle text-center pb-4">{{ . }}</h3>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row justify-content-center pt-4 pb-4">
+      <div class="col-12 col-xl-6 text-center">
+        {{ with .content.image }}{{ partial "utilities/image.html" . }}{{ end }}
+      </div>
+    </div>
+    <div class="row justify-content-center pt-4">
+      <div class="col-12 col-xl-6 text-center">
+        {{ with .content.primarybutton }}
+          <a class="btn btn-primary px-4" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+        {{ end }}
+        {{ with .content.secondarybutton }}
+          <a class="btn btn-outline-primary px-4 ms-xl-4" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

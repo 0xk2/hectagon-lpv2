@@ -1,0 +1,74 @@
+<section class="section funds py-5">
+  <div class="container">
+    <div class="row justify-content-between pb-4">
+      <div class="col-12 col-xl-4 text-align-left">
+        {{ with .content.title }}
+          <h3 class="section-title"> {{ . | markdownify }} </h3>
+        {{ end }}
+      </div>
+      <div class="col-4 col-xl-4 text-align-right viewall">
+        {{ with .content.more }}
+          <a href="{{ .url }}">{{ .text | markdownify }}</a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="row justify-content-between pb-4">
+      {{ range .content.items }}
+      <div class="col-12 col-xl-4">
+        <div class="card border-0 border-radius-34">
+          <div class="top-fund">
+            <div class="logo-wrapper">
+              <div>
+                {{ partial "utilities/image.html" .logo }}
+              </div>
+            </div>
+            <div class="apy-text {{ .status }}">
+              <div>
+                <div class="apy-label">APY</div>
+                <div class="apy-sublabel">(esitmated stable coin)</div>
+              </div>
+              <div class="pct">
+                {{ .apy }}
+              </div>
+            </div>
+          </div>
+          <div class="body-fund text-left">
+            <div>
+              <h4 class="{{ .status }}">
+                {{ .title }}
+              </h4>
+              {{ if eq .status "closed" }} (CLOSED) {{ end }}
+            </div>
+            <div>
+              Lead by DAO members
+            </div>
+            <div class="raised-stat">
+              <div>
+                {{ .raised | markdownify }} / {{ .total | markdownify }}
+              </div>
+              <div>
+                {{ .pct | markdownify }}%
+              </div>
+            </div>
+            <div>
+              <div class="bar" style="width: {{ .pct}}%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="row justify-content-between pb-4 pt-4">
+      <div class="col-12 col-xl-12 text-center co-invest">
+        <marquee>
+          <span class="label">Coinvest with the best </span>
+          {{ range .content.coinvest }}
+            <span class="investor">{{ with .name }} {{ . | markdownify }} {{ end }}</span>
+          {{ end }}
+        </marquee>  
+      </div>
+    </div>
+  </div>
+</section>
