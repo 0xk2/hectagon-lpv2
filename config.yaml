@@ -1,4 +1,4 @@
-baseURL: "https:/hectagon.netlify.app/"
+baseURL: ""
 theme: "up-business-theme"
 languageCode: "en-us"
 
